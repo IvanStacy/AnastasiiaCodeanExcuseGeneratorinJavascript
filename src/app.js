@@ -1,73 +1,48 @@
+/* eslint-disable */
 import "bootstrap";
-// import "./style.css";
-// window.onload = function() {
-//   let img = document.getElementById("btn");
-//   let pics = [
-//     "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fphoto&psig=AOvVaw0hUNwT2QYt1NFhkej2Sizb&ust=1693446484883000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMC3i_Ohg4EDFQAAAAAdAAAAABAQ",
-//     "https://www.google.com/url?sa=i&url=https%3A%2F%2Faviationweek.com%2Fdefense-space%2Fphoto-contest%2F2021-aviation-week-photo-contest-winning-photos&psig=AOvVaw0hUNwT2QYt1NFhkej2Sizb&ust=1693446484883000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMC3i_Ohg4EDFQAAAAAdAAAAABAV",
-//     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.loveexploring.com%2Fgalleries%2F94538%2Fthese-fantastic-travel-photos-will-make-you-feel-better-about-the-world&psig=AOvVaw0hUNwT2QYt1NFhkej2Sizb&ust=1693446484883000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMC3i_Ohg4EDFQAAAAAdAAAAABAe",
-//     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.filemail.com%2Fcontent%2Fblog%2Fhow-to-send-high-quality-photos-6-free-methods%2F&psig=AOvVaw0hUNwT2QYt1NFhkej2Sizb&ust=1693446484883000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMC3i_Ohg4EDFQAAAAAdAAAAABAm",
-//     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Fsheeps-and-lambs-gm680707202-124759809&psig=AOvVaw1RGs6vR6oxVM065HjgIJ4-&ust=1693447001611000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNjVtOmjg4EDFQAAAAAdAAAAABAE"
-//   ];
-//   let who = ["The dog", "My grandma", "His turtle", "My bird"];
-//   let action = ["ate", "peed", "crushed", "broke"];
-//   let what = ["my homework", "the keys", "the car"];
-//   let when = [
-//     "before the class",
-//     "right on time",
-//     "when I finished",
-//     "during my lunch",
-//     "while I was playing"
-//   ];
-//   let randomIdx = Math.floor(Math.random() * who.length);
-//   let whoR = who[randomIdx];
-//   let picsR = pics[randomIdx];
-//   let actionR = action[Math.floor(Math.random() * action.length)];
-//   let whatR = what[Math.floor(Math.random() * what.length)];
-//   let whenR = when[Math.floor(Math.random() * when.length)];
-
-//   const resulMessage = `${whoR} ${actionR} ${whatR} ${whenR}`;
-
-//   document.getElementById("excuse").innerHTML = resulMessage;
-// };
+import "./style.css";
 window.onload = function() {
   let btn = document.getElementById("btn");
   let img = document.getElementById("img");
-  document.getElementById("excuse").innerHTML = resultMessage;
-  console.log(resultMessage);
   let pics = [
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fphoto&psig=AOvVaw0hUNwT2QYt1NFhkej2Sizb&ust=1693446484883000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMC3i_Ohg4EDFQAAAAAdAAAAABAQ",
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Faviationweek.com%2Fdefense-space%2Fphoto-contest%2F2021-aviation-week-photo-contest-winning-photos&psig=AOvVaw0hUNwT2QYt1NFhkej2Sizb&ust=1693446484883000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMC3i_Ohg4EDFQAAAAAdAAAAABAV",
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.loveexploring.com%2Fgalleries%2F94538%2Fthese-fantastic-travel-photos-will-make-you-feel-better-about-the-world&psig=AOvVaw0hUNwT2QYt1NFhkej2Sizb&ust=1693446484883000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMC3i_Ohg4EDFQAAAAAdAAAAABAe",
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.filemail.com%2Fcontent%2Fblog%2Fhow-to-send-high-quality-photos-6-free-methods%2F&psig=AOvVaw0hUNwT2QYt1NFhkej2Sizb&ust=1693446484883000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMC3i_Ohg4EDFQAAAAAdAAAAABAm",
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Fsheeps-and-lambs-gm680707202-124759809&psig=AOvVaw1RGs6vR6oxVM065HjgIJ4-&ust=1693447001611000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNjVtOmjg4EDFQAAAAAdAAAAABAE"
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyNoprpOz8SKuedEiXmT__-Bv7_dh_xfmTzA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPAJ6MA67DIpxe94yMnhb4Iev7RrB6TjRMzmCgle-0bCGzzqtSfDU-oKWOQZLmUE8OnP8&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtqvNwtlvDm_8FOvUPCdtYDMhEqrQhz4sYw&usqp=CAU",
+    "https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/10/30/13/44/88/3fcbad040cd7.jpg",
+    "https://kartinkof.club/uploads/posts/2022-03/1648342560_5-kartinkof-club-p-privet-vsem-mem-5.jpg"
   ];
   const refreshPage = () => {
     location.reload();
   };
-  btn.addEventListener("click", refreshPage, function() {
-    let randomIdx = Math.floor(Math.random() * pics.length);
-    img.src = pics[randomIdx];
+  btn.addEventListener("click", refreshPage);
+  // setrandomPic
+  let randomPicIdx = Math.floor(Math.random() * pics.length);
+  let randomPix = pics[randomPicIdx];
+  img.setAttribute("src", randomPix);
 
-    let who = ["The dog", "My grandma", "His turtle", "My bird"];
-    let action = ["ate", "peed", "crushed", "broke"];
-    let what = ["my homework", "the keys", "the car"];
-    let when = [
-      "before the class",
-      "right on time",
-      "when I finished",
-      "during my lunch",
-      "while I was playing"
-    ];
-
-    let whoR = who[Math.floor(Math.random() * who.length)];
-    let actionR = action[Math.floor(Math.random() * action.length)];
-    let whatR = what[Math.floor(Math.random() * what.length)];
-    let whenR = when[Math.floor(Math.random() * when.length)];
-
-    const resultMessage = `${whoR} ${actionR} ${whatR} ${whenR}`;
-    return (
-      who[whoR] + " " + action[actionR] + " " + what[whatR] + " " + when[whenR]
-    );
-  });
+  let who = ["The dog", "My grandma", "His turtle", "My bird"];
+  let action = ["ate", "peed", "crushed", "broke"];
+  let what = ["my homework", "the keys", "the car"];
+  let when = [
+    "before the class",
+    "right on time",
+    "when I finished",
+    "during my lunch",
+    "while I was playing"
+  ];
+  // setrandomIdx
+  let whoIdx = [Math.floor(Math.random() * who.length)];
+  let actionIdx = [Math.floor(Math.random() * action.length)];
+  let whatIdx = [Math.floor(Math.random() * what.length)];
+  let whenIdx = [Math.floor(Math.random() * when.length)];
+  const resultMessage =
+    who[whoIdx] +
+    " " +
+    action[actionIdx] +
+    " " +
+    what[whatIdx] +
+    " " +
+    when[whenIdx];
+  //runSentence
+  document.getElementById("excuse").innerHTML = resultMessage;
 };
